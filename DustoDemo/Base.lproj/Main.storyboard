@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMg-2B-Wfv">
+                                <rect key="frame" x="117" y="282" width="180" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47450980392156861" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GWI-gQ-D2v"/>
+                                    <constraint firstAttribute="width" constant="180" id="e3R-dv-CRK"/>
+                                </constraints>
+                                <state key="normal" title="Get Purchase ID">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getPIDAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEt-G6-uLx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bA-ro-QsW">
+                                <rect key="frame" x="117" y="426" width="180" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="uHm-jc-FcD"/>
+                                    <constraint firstAttribute="height" constant="44" id="ufS-tt-jVx"/>
+                                </constraints>
+                                <state key="normal" title="Get User ID">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getUIDAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TdM-BP-OWd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkJ-jY-wR5">
+                                <rect key="frame" x="117" y="570" width="180" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47450980390000003" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="c9o-gv-YJp"/>
+                                    <constraint firstAttribute="width" constant="180" id="ga9-61-XoH"/>
+                                </constraints>
+                                <state key="normal" title="Validate Purchase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="validateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRT-JV-vBW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXM-jU-JUl">
+                                <rect key="frame" x="57" y="346" width="300" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="mAb-Ax-FCK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UID" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x31-9q-Jon">
+                                <rect key="frame" x="57" y="490" width="300" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="m7A-OY-Yg8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买状态" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhJ-Us-enV">
+                                <rect key="frame" x="57" y="634" width="300" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Yn8-AF-P1E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KkJ-jY-wR5" firstAttribute="top" secondItem="6bA-ro-QsW" secondAttribute="bottom" constant="100" id="2ew-Us-hvA"/>
+                            <constraint firstItem="6bA-ro-QsW" firstAttribute="top" secondItem="GMg-2B-Wfv" secondAttribute="bottom" constant="100" id="52q-KV-qz4"/>
+                            <constraint firstItem="6bA-ro-QsW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yl-oj-GUu"/>
+                            <constraint firstItem="vXM-jU-JUl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9KV-iI-oFA"/>
+                            <constraint firstItem="FhJ-Us-enV" firstAttribute="top" secondItem="KkJ-jY-wR5" secondAttribute="bottom" constant="20" id="I8R-9Q-bo0"/>
+                            <constraint firstItem="6bA-ro-QsW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Iyv-rw-U6x"/>
+                            <constraint firstItem="KkJ-jY-wR5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QcH-CY-LpQ"/>
+                            <constraint firstItem="x31-9q-Jon" firstAttribute="top" secondItem="6bA-ro-QsW" secondAttribute="bottom" constant="20" id="TGr-yC-OBr"/>
+                            <constraint firstItem="x31-9q-Jon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="flL-we-U2D"/>
+                            <constraint firstItem="FhJ-Us-enV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kec-6d-Sn8"/>
+                            <constraint firstItem="vXM-jU-JUl" firstAttribute="top" secondItem="GMg-2B-Wfv" secondAttribute="bottom" constant="20" id="l0K-EY-rmQ"/>
+                            <constraint firstItem="GMg-2B-Wfv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0z-87-WVt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pidLabel" destination="vXM-jU-JUl" id="sB6-ai-BmQ"/>
+                        <outlet property="statusLabel" destination="FhJ-Us-enV" id="E4f-aw-roQ"/>
+                        <outlet property="uidLabel" destination="x31-9q-Jon" id="O2V-Mz-AaQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

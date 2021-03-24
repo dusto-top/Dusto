@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001EC1C0260AD90000012624 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC1BF260AD90000012624 /* AppDelegate.m */; };
+		001EC1C6260AD90000012624 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC1C5260AD90000012624 /* ViewController.m */; };
+		001EC1C9260AD90000012624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001EC1C7260AD90000012624 /* Main.storyboard */; };
+		001EC1CB260AD90000012624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001EC1CA260AD90000012624 /* Assets.xcassets */; };
+		001EC1CE260AD90000012624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001EC1CC260AD90000012624 /* LaunchScreen.storyboard */; };
+		001EC1D1260AD90000012624 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC1D0260AD90000012624 /* main.m */; };
+		001EC1DB260AD90100012624 /* DustoDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC1DA260AD90100012624 /* DustoDemoTests.m */; };
+		001EC1E6260AD90100012624 /* DustoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC1E5260AD90100012624 /* DustoDemoUITests.m */; };
+		001EC221260AE12400012624 /* DustoApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC220260AE12400012624 /* DustoApp.m */; };
+		001EC231260AF61000012624 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001EC230260AF61000012624 /* CloudKit.framework */; };
+		001EC24F260AFCDB00012624 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 001EC244260AFCDB00012624 /* LICENSE */; };
+		001EC250260AFCDC00012624 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 001EC245260AFCDB00012624 /* README.md */; };
+		001EC251260AFCDC00012624 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC247260AFCDB00012624 /* IAPHelper.m */; };
+		001EC252260AFCDC00012624 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC248260AFCDB00012624 /* NSString+Base64.m */; };
+		001EC253260AFCDC00012624 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC249260AFCDB00012624 /* SFHFKeychainUtils.m */; };
+		001EC254260AFCDC00012624 /* IAPShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 001EC24E260AFCDB00012624 /* IAPShare.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		001EC1D7260AD90100012624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001EC1B3260AD90000012624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001EC1BA260AD90000012624;
+			remoteInfo = DustoDemo;
+		};
+		001EC1E2260AD90100012624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001EC1B3260AD90000012624 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001EC1BA260AD90000012624;
+			remoteInfo = DustoDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001EC1BB260AD90000012624 /* DustoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DustoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		001EC1BE260AD90000012624 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		001EC1BF260AD90000012624 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		001EC1C4260AD90000012624 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		001EC1C5260AD90000012624 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		001EC1C8260AD90000012624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		001EC1CA260AD90000012624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		001EC1CD260AD90000012624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		001EC1CF260AD90000012624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001EC1D0260AD90000012624 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		001EC1D6260AD90100012624 /* DustoDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DustoDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001EC1DA260AD90100012624 /* DustoDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DustoDemoTests.m; sourceTree = "<group>"; };
+		001EC1DC260AD90100012624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001EC1E1260AD90100012624 /* DustoDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DustoDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		001EC1E5260AD90100012624 /* DustoDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DustoDemoUITests.m; sourceTree = "<group>"; };
+		001EC1E7260AD90100012624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001EC21F260AE12400012624 /* DustoApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DustoApp.h; sourceTree = "<group>"; };
+		001EC220260AE12400012624 /* DustoApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DustoApp.m; sourceTree = "<group>"; };
+		001EC230260AF61000012624 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		001EC238260AF77100012624 /* DustoDemo.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = DustoDemo.entitlements; sourceTree = "<group>"; };
+		001EC244260AFCDB00012624 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		001EC245260AFCDB00012624 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		001EC247260AFCDB00012624 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		001EC248260AFCDB00012624 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		001EC249260AFCDB00012624 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		001EC24A260AFCDB00012624 /* IAPShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPShare.h; sourceTree = "<group>"; };
+		001EC24B260AFCDB00012624 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		001EC24C260AFCDB00012624 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		001EC24D260AFCDB00012624 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		001EC24E260AFCDB00012624 /* IAPShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPShare.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		001EC1B8260AD90000012624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001EC231260AF61000012624 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001EC1D3260AD90100012624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001EC1DE260AD90100012624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		001EC1B2260AD90000012624 = {
+			isa = PBXGroup;
+			children = (
+				001EC21E260AE11700012624 /* Dusto */,
+				001EC1BD260AD90000012624 /* DustoDemo */,
+				001EC1D9260AD90100012624 /* DustoDemoTests */,
+				001EC1E4260AD90100012624 /* DustoDemoUITests */,
+				001EC1BC260AD90000012624 /* Products */,
+				001EC22F260AF61000012624 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		001EC1BC260AD90000012624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				001EC1BB260AD90000012624 /* DustoDemo.app */,
+				001EC1D6260AD90100012624 /* DustoDemoTests.xctest */,
+				001EC1E1260AD90100012624 /* DustoDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		001EC1BD260AD90000012624 /* DustoDemo */ = {
+			isa = PBXGroup;
+			children = (
+				001EC242260AFC5C00012624 /* Vendors */,
+				001EC1BE260AD90000012624 /* AppDelegate.h */,
+				001EC1BF260AD90000012624 /* AppDelegate.m */,
+				001EC1C4260AD90000012624 /* ViewController.h */,
+				001EC1C5260AD90000012624 /* ViewController.m */,
+				001EC1C7260AD90000012624 /* Main.storyboard */,
+				001EC1CA260AD90000012624 /* Assets.xcassets */,
+				001EC1CC260AD90000012624 /* LaunchScreen.storyboard */,
+				001EC1CF260AD90000012624 /* Info.plist */,
+				001EC238260AF77100012624 /* DustoDemo.entitlements */,
+				001EC1D0260AD90000012624 /* main.m */,
+			);
+			path = DustoDemo;
+			sourceTree = "<group>";
+		};
+		001EC1D9260AD90100012624 /* DustoDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				001EC1DA260AD90100012624 /* DustoDemoTests.m */,
+				001EC1DC260AD90100012624 /* Info.plist */,
+			);
+			path = DustoDemoTests;
+			sourceTree = "<group>";
+		};
+		001EC1E4260AD90100012624 /* DustoDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				001EC1E5260AD90100012624 /* DustoDemoUITests.m */,
+				001EC1E7260AD90100012624 /* Info.plist */,
+			);
+			path = DustoDemoUITests;
+			sourceTree = "<group>";
+		};
+		001EC21E260AE11700012624 /* Dusto */ = {
+			isa = PBXGroup;
+			children = (
+				001EC21F260AE12400012624 /* DustoApp.h */,
+				001EC220260AE12400012624 /* DustoApp.m */,
+			);
+			path = Dusto;
+			sourceTree = "<group>";
+		};
+		001EC22F260AF61000012624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				001EC230260AF61000012624 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		001EC242260AFC5C00012624 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				001EC243260AFCDB00012624 /* IAPHelper */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		001EC243260AFCDB00012624 /* IAPHelper */ = {
+			isa = PBXGroup;
+			children = (
+				001EC244260AFCDB00012624 /* LICENSE */,
+				001EC245260AFCDB00012624 /* README.md */,
+				001EC246260AFCDB00012624 /* IAPHelper */,
+			);
+			path = IAPHelper;
+			sourceTree = "<group>";
+		};
+		001EC246260AFCDB00012624 /* IAPHelper */ = {
+			isa = PBXGroup;
+			children = (
+				001EC247260AFCDB00012624 /* IAPHelper.m */,
+				001EC248260AFCDB00012624 /* NSString+Base64.m */,
+				001EC249260AFCDB00012624 /* SFHFKeychainUtils.m */,
+				001EC24A260AFCDB00012624 /* IAPShare.h */,
+				001EC24B260AFCDB00012624 /* SFHFKeychainUtils.h */,
+				001EC24C260AFCDB00012624 /* NSString+Base64.h */,
+				001EC24D260AFCDB00012624 /* IAPHelper.h */,
+				001EC24E260AFCDB00012624 /* IAPShare.m */,
+			);
+			path = IAPHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		001EC1BA260AD90000012624 /* DustoDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001EC1EA260AD90100012624 /* Build configuration list for PBXNativeTarget "DustoDemo" */;
+			buildPhases = (
+				001EC1B7260AD90000012624 /* Sources */,
+				001EC1B8260AD90000012624 /* Frameworks */,
+				001EC1B9260AD90000012624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DustoDemo;
+			productName = DustoDemo;
+			productReference = 001EC1BB260AD90000012624 /* DustoDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		001EC1D5260AD90100012624 /* DustoDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001EC1ED260AD90100012624 /* Build configuration list for PBXNativeTarget "DustoDemoTests" */;
+			buildPhases = (
+				001EC1D2260AD90100012624 /* Sources */,
+				001EC1D3260AD90100012624 /* Frameworks */,
+				001EC1D4260AD90100012624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001EC1D8260AD90100012624 /* PBXTargetDependency */,
+			);
+			name = DustoDemoTests;
+			productName = DustoDemoTests;
+			productReference = 001EC1D6260AD90100012624 /* DustoDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		001EC1E0260AD90100012624 /* DustoDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001EC1F0260AD90100012624 /* Build configuration list for PBXNativeTarget "DustoDemoUITests" */;
+			buildPhases = (
+				001EC1DD260AD90100012624 /* Sources */,
+				001EC1DE260AD90100012624 /* Frameworks */,
+				001EC1DF260AD90100012624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				001EC1E3260AD90100012624 /* PBXTargetDependency */,
+			);
+			name = DustoDemoUITests;
+			productName = DustoDemoUITests;
+			productReference = 001EC1E1260AD90100012624 /* DustoDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		001EC1B3260AD90000012624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Dusto;
+				TargetAttributes = {
+					001EC1BA260AD90000012624 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					001EC1D5260AD90100012624 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 001EC1BA260AD90000012624;
+					};
+					001EC1E0260AD90100012624 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 001EC1BA260AD90000012624;
+					};
+				};
+			};
+			buildConfigurationList = 001EC1B6260AD90000012624 /* Build configuration list for PBXProject "DustoDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 001EC1B2260AD90000012624;
+			productRefGroup = 001EC1BC260AD90000012624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				001EC1BA260AD90000012624 /* DustoDemo */,
+				001EC1D5260AD90100012624 /* DustoDemoTests */,
+				001EC1E0260AD90100012624 /* DustoDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		001EC1B9260AD90000012624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001EC1CE260AD90000012624 /* LaunchScreen.storyboard in Resources */,
+				001EC1CB260AD90000012624 /* Assets.xcassets in Resources */,
+				001EC250260AFCDC00012624 /* README.md in Resources */,
+				001EC24F260AFCDB00012624 /* LICENSE in Resources */,
+				001EC1C9260AD90000012624 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001EC1D4260AD90100012624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001EC1DF260AD90100012624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001EC1B7260AD90000012624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001EC1C6260AD90000012624 /* ViewController.m in Sources */,
+				001EC1C0260AD90000012624 /* AppDelegate.m in Sources */,
+				001EC253260AFCDC00012624 /* SFHFKeychainUtils.m in Sources */,
+				001EC1D1260AD90000012624 /* main.m in Sources */,
+				001EC251260AFCDC00012624 /* IAPHelper.m in Sources */,
+				001EC221260AE12400012624 /* DustoApp.m in Sources */,
+				001EC252260AFCDC00012624 /* NSString+Base64.m in Sources */,
+				001EC254260AFCDC00012624 /* IAPShare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001EC1D2260AD90100012624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001EC1DB260AD90100012624 /* DustoDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		001EC1DD260AD90100012624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001EC1E6260AD90100012624 /* DustoDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		001EC1D8260AD90100012624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001EC1BA260AD90000012624 /* DustoDemo */;
+			targetProxy = 001EC1D7260AD90100012624 /* PBXContainerItemProxy */;
+		};
+		001EC1E3260AD90100012624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 001EC1BA260AD90000012624 /* DustoDemo */;
+			targetProxy = 001EC1E2260AD90100012624 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		001EC1C7260AD90000012624 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001EC1C8260AD90000012624 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		001EC1CC260AD90000012624 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				001EC1CD260AD90000012624 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		001EC1E8260AD90100012624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		001EC1E9260AD90100012624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		001EC1EB260AD90100012624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DustoDemo/DustoDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DustoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.dusto.DustoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		001EC1EC260AD90100012624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DustoDemo/DustoDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DustoDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.dusto.DustoDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		001EC1EE260AD90100012624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JQDV9UXMX;
+				INFOPLIST_FILE = DustoDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.dusto.DustoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DustoDemo.app/DustoDemo";
+			};
+			name = Debug;
+		};
+		001EC1EF260AD90100012624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JQDV9UXMX;
+				INFOPLIST_FILE = DustoDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.dusto.DustoDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DustoDemo.app/DustoDemo";
+			};
+			name = Release;
+		};
+		001EC1F1260AD90100012624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JQDV9UXMX;
+				INFOPLIST_FILE = DustoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.dusto.DustoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DustoDemo;
+			};
+			name = Debug;
+		};
+		001EC1F2260AD90100012624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JQDV9UXMX;
+				INFOPLIST_FILE = DustoDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = top.dusto.DustoDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DustoDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001EC1B6260AD90000012624 /* Build configuration list for PBXProject "DustoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001EC1E8260AD90100012624 /* Debug */,
+				001EC1E9260AD90100012624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001EC1EA260AD90100012624 /* Build configuration list for PBXNativeTarget "DustoDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001EC1EB260AD90100012624 /* Debug */,
+				001EC1EC260AD90100012624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001EC1ED260AD90100012624 /* Build configuration list for PBXNativeTarget "DustoDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001EC1EE260AD90100012624 /* Debug */,
+				001EC1EF260AD90100012624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		001EC1F0260AD90100012624 /* Build configuration list for PBXNativeTarget "DustoDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				001EC1F1260AD90100012624 /* Debug */,
+				001EC1F2260AD90100012624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 001EC1B3260AD90000012624 /* Project object */;
+}
