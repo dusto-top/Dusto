@@ -27,13 +27,16 @@ This SDK provides 2 main methods.
 One for initialization with `ACCESS KEY` and `ACCESS SECRET`:
 
 ```object-c
-+ (void)configureWithAccessKey:(NSString *)accessKey accessSecret:(NSString *)accessSecret NS_SWIFT_NAME(configure(accessKey:accessSecret:));
++ (void)configureWithAccessKey:(NSString *)accessKey
+                  accessSecret:(NSString *)accessSecret NS_SWIFT_NAME(configure(accessKey:accessSecret:));
 ```
 
 One for sending validation to `https://dusto.top/`:
 
 ```object-c
-- (void)validatePurchaseWithPurchaseID:(NSString *)purchaseID userID:(nullable NSString *)userID completion:(nullable void (^)(NSError * _Nullable error, BOOL valid))completion NS_SWIFT_NAME(validatePurchase(purchaseID:userID:completion:));
+- (void)validatePurchaseWithPurchaseID:(NSString *)purchaseID
+                                userID:(nullable NSString *)userID
+                            completion:(nullable void (^)(NSError * _Nullable error, BOOL valid))completion NS_SWIFT_NAME(validatePurchase(purchaseID:userID:completion:));
 ```
 
 > [NOTICE] This SDK doesn't provides methods for getting `purchaseID` and `userID`. You have to get them by your own.
