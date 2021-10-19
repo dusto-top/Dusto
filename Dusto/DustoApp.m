@@ -90,31 +90,27 @@ static DustoApp *sDefaultApp;
     [request setValue:[NSString stringWithFormat:@"DUSTO %@:%@", self.accessKey, signatureBase64] forHTTPHeaderField:@"Authorization"];
     
     NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        if (error) {
-            !completion ?: completion(error, NO);
-        } else {
+        BOOL valid = NO;
+        if (!error) {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
             NSDictionary *data = dict[@"data"];
             if (data) {
                 NSString *status = data[@"status"];
-                BOOL valid = [status isEqualToString:@"valid"];
-                !completion ?: completion(nil, valid);
+                valid = [status isEqualToString:@"valid"];
             } else {
-                NSDictionary *userInfo = nil;
                 NSString *message = dict[@"message"];
                 if (message) {
-                    userInfo = @{NSLocalizedDescriptionKey: message};
+                    NSDictionary *userInfo = @{NSLocalizedDescriptionKey: message};
+                    error = [NSError errorWithDomain:kDustoErrorDomain code:NSURLErrorUnknown userInfo:userInfo];
                 }
-                NSError *error = [NSError errorWithDomain:kDustoErrorDomain code:NSURLErrorUnknown userInfo:userInfo];
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    !completion ?: completion(error, NO);
-                });
             }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                !completion ?: completion(error, valid);
+            });
         }
     }];
     [dataTask resume];
 }
-
 
 - (NSString *)hmacSHA256StringWithMessage:(NSString *)message Key:(NSString *)key {
     NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];

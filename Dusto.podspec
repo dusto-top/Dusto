@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Dusto"
-  spec.version      = "0.1.3"
+  spec.version      = "0.1.4"
   spec.summary      = "A wrapper to make it easy to deal with Dusto."
   spec.description  = <<-DESC
                        DustoApp is a simple utility class for dealing with Dusto.
