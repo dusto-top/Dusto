@@ -106,7 +106,9 @@ static DustoApp *sDefaultApp;
                     userInfo = @{NSLocalizedDescriptionKey: message};
                 }
                 NSError *error = [NSError errorWithDomain:kDustoErrorDomain code:NSURLErrorUnknown userInfo:userInfo];
-                !completion ?: completion(error, NO);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    !completion ?: completion(error, NO);
+                });
             }
         }
     }];
