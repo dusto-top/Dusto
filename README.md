@@ -11,7 +11,7 @@
 If you are using [Cocoapods](https://cocoapods.org/), add this line to your `Podfile`:
 
 ```ruby
-pod 'Dusto', '~> 0.1.2'
+pod 'Dusto', '~> 0.1.3'
 ```
 
 Then run `pod install`.
@@ -52,3 +52,5 @@ Get more details in the sample project [`DustoDemo`](./DustoDemo). In order to h
 ## License
 
 MIT
+
+
