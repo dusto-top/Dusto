@@ -11,7 +11,7 @@
 If you are using [Cocoapods](https://cocoapods.org/), add this line to your `Podfile`:
 
 ```ruby
-pod 'Dusto', '~> 0.1.4'
+pod 'Dusto', '~> 0.1.5'
 ```
 
 Then run `pod install`.
