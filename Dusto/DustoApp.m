@@ -93,21 +93,21 @@ static DustoApp *sDefaultApp;
         BOOL valid = NO;
         if (!error) {
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-            NSDictionary *data = dict[@"data"];
-            if (data) {
-                NSString *status = data[@"status"];
+            NSString *status = [dict valueForKeyPath:@"data.status"];
+            if (status) {
                 valid = [status isEqualToString:@"valid"];
             } else {
                 NSString *message = dict[@"message"];
+                NSDictionary *userInfo = nil;
                 if (message) {
-                    NSDictionary *userInfo = @{NSLocalizedDescriptionKey: message};
-                    error = [NSError errorWithDomain:kDustoErrorDomain code:NSURLErrorUnknown userInfo:userInfo];
+                    userInfo = @{NSLocalizedDescriptionKey: message};
                 }
+                error = [NSError errorWithDomain:kDustoErrorDomain code:NSURLErrorUnknown userInfo:userInfo];
             }
-            dispatch_async(dispatch_get_main_queue(), ^{
-                !completion ?: completion(error, valid);
-            });
         }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            !completion ?: completion(error, valid);
+        });
     }];
     [dataTask resume];
 }
